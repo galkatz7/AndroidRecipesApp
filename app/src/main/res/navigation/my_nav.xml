@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav.xml"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/allRecipesFragment"
+        android:name="com.tests.myfinalproject.ui.all_recipes.AllRecipesFragment"
+        android:label="@string/title_textview"
+        tools:layout="@layout/recipes_fragment" >
+        <action
+            android:id="@+id/action_allRecipesFragment_to_singleRecipeFragment"
+            app:destination="@id/singleRecipeFragment" />
+        <action
+            android:id="@+id/action_allRecipesFragment_to_addRecipeFragment"
+            app:destination="@id/addRecipeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/singleRecipeFragment"
+        android:name="com.tests.myfinalproject.ui.single_recipe.SingleRecipeFragment"
+        android:label="@string/details"
+        tools:layout="@layout/recipe_detail_fragment" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.tests.myfinalproject.ui.menu.MenuFragment"
+        android:label=""
+        tools:layout="@layout/menu_fragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_allRecipesFragment"
+            app:destination="@id/allRecipesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_allFavoritesFragment"
+            app:destination="@id/allFavoritesFragment"/>
+        <action
+            android:id="@+id/action_menuFragment_to_surpriseMeFragment"
+            app:destination="@id/surpriseMeFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/allFavoritesFragment"
+        android:name="com.tests.myfinalproject.ui.all_favorites.AllFavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/favorites_fragment">
+        <action
+            android:id="@+id/action_allFavoritesFragment_to_singleRecipeFragment"
+            app:destination="@id/singleRecipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surpriseMeFragment"
+        android:name="com.tests.myfinalproject.ui.surprise.SurpriseMeFragment"
+        android:label="@string/surprise_me"
+        tools:layout="@layout/favorites_fragment"/>
+
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.tests.myfinalproject.ui.add_recipe.AddRecipeFragment"
+        android:label="@string/add_recipe">
+        <action
+            android:id="@+id/action_addRecipeFragment_to_allRecipesFragment"
+            app:destination="@id/allRecipesFragment" />
+    </fragment>
+
+</navigation>

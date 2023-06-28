@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">פרויקט סופי אנדרואיד</string>
+    <string name="title_textview">המתכונים שלנו</string>
+    <string name="recipes">מתכונים</string>
+    <string name="favorites">מועדפים</string>
+    <string name="categories">קטגוריות</string>
+    <string name="details">פרטים</string>
+    <string name="delete">מחק</string>
+    <string name="delete_recipe">מחק מתכון</string>
+    <string name="delete_msg">האם ברצונך למחוק את המתכון?</string>
+    <string name="cancel">ביטול</string>
+    <string name="deleted_msg">המתכון נמחק</string>
+    <string name="canceled_msg">בוטל</string>
+    <string name="surprise_me">הפתעה</string>
+    <string name="surprise_me_msg">תודה שסמכת עלינו!&#10;מקווים שהמתכון יהיה לטעמך :)</string>
+    <string name="fill_all_fields">יש למלא את כל השדות</string>
+    <string name="added_msg">המתכון התווסף</string>
+    <string name="recipe_name">שם המתכון</string>
+    <string name="ingredients">מרכיבים</string>
+    <string name="instructions">הוראות</string>
+    <string name="add_recipe">הוסף מתכון</string>
+    <string name="remove_favorite">הסר ממועדפים</string>
+    <string name="remove_msg">האם ברצונך להסיר מתכון זה מהמועדפים?</string>
+    <string name="remove">הסר</string>
+    <string name="removeded_msg">המתכון הוסר מהמועדפים</string>
+</resources>
